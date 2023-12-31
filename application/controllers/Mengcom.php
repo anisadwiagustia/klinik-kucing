@@ -19,6 +19,18 @@ class mengcom extends CI_Controller
         $this->load->view('mengcom-artikel');
         $this->load->view('mengcom-footer');
     }
+    public function konsul()
+    {
+        $this->load->view('mengcom-header');
+        $this->load->view('mengcom-konsultasi');
+        $this->load->view('mengcom-footer');
+    }
+    public function tanya()
+    {
+        $this->load->view('mengcom-header');
+        $this->load->view('mengcom-tanyajawab');
+        $this->load->view('mengcom-footer');
+    }
     public function event()
     {
         $this->load->view('mengcom-header');
@@ -34,31 +46,15 @@ class mengcom extends CI_Controller
 
     public function masuk()
     { 
-        $this->load->view('login');
-        $this->load->model('mengcomdb');
+        redirect('Autentifikasi');
     }
 
-    public function akun()
-    {
-        $this->load->view('mengcom-header');
-        $this->load->view('mengcom-akun');
-        $this->load->view('mengcom-footer');
+    public function regis (){
+        redirect('Autentifikasi/registrasi');
     }
 
-    public function model()
-    {
-        $data = [
-            'nama' => $this->input->post('nama'),
-            'panggilan' => $this->input->post('username'),
-            'email' => $this->input->post('email'),
-            'alamat' => $this->input->post('alamat'),
-            'no_hp' => $this->input->post('no_wa'),
-            'bio' => $this->input->post('bio'),
-        ];
-        $this->load->view('mengcom-header');
-        $this->load->view('mengcom-akun-model' , $data);
-        $this->load->view('mengcom-footer');
+    public function logot(){
+        redirect('Autentifikasi/logout');
     }
 
-    
 }

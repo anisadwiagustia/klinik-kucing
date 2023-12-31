@@ -3,7 +3,7 @@
 
         <h1>Bogor <span>Cat </span>Lovers <span>Community</span></h1>
         <p>Bogor Meng Community adalah <br> tempat para pecinta kucing <br> berbagi pengetahuan, event,<br> tata cara merawat kucing yang baik. </p>
-        <a href="" class="tbl-biru">Gabung Sekarang</a>
+        <a href="<?= base_url('Mengcom/regis') ?>" class="tbl-biru">Gabung Sekarang</a>
     </main>
 </section>
 <section id="artikel" class="artikel">

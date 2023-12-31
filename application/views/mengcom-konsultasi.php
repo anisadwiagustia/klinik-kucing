@@ -19,12 +19,4 @@
             <p>Jika kucing Anda menunjukkan gejala muntah dan diare secara berulang, ada beberapa hal penting yang perlu Anda perhatikan. Pertama-tama, perhatikan seberapa sering hal ini terjadi dan sejak kapan. Jika gejala ini berlangsung lebih dari satu atau dua hari, itu merupakan tanda peringatan. Selanjutnya, amati apakah ada darah atau lendir dalam muntah atau tinja. Kehadiran darah dapat mengindikasikan masalah serius dan memerlukan perhatian medis segera. Perhatikan juga perilaku kucing Anda, apakah terlihat lesu atau kehilangan nafsu makan. Jika gejala ini terus berlanjut, segera konsultasikan dengan dokter hewan untuk diagnosis dan perawatan yang tepat.</p>
         </div>
     </div>
-    <?php
-    $this->load->database();
-    if ($this->db->conn_id === FALSE) {
-    die("Tidak dapat terhubung ke database");
-    } else {
-    echo "Berhasil terhubung ke database";
-    }
-    ?>
 </section>
